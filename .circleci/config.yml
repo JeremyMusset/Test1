@@ -23,4 +23,6 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - say-hello
+      - checkout
+      - run: npm install
+      - run: npm test
